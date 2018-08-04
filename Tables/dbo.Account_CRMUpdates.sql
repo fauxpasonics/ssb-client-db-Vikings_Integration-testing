@@ -1,0 +1,32 @@
+CREATE TABLE [dbo].[Account_CRMUpdates]
+(
+[SSB_CRMSYSTEM_DimCustomerID__c] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastUpdate] [datetime] NULL CONSTRAINT [DF__Account_S__LastU__52593CB8asd] DEFAULT (getdate()),
+[Id] [varchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_ACCT_ID__c] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_CRMSYSTEM_CONTACT_ID__c] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Archtics_ID__c] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstName] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastName] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingStreet] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingCity] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingState] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingPostalCode] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BillingCountry] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Phone] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonMobilePhone] [nvarchar] (25) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonHomePhone] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonOtherPhone] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonEmail] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonBirthdate] [date] NULL,
+[IsBusinessAccount] [int] NULL,
+[ErrorCode] [int] NULL,
+[ErrorDescription] [nvarchar] (1500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[mscrm_id] [varchar] (18) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EmailTwo] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EmailOne] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Coyotes_SeasonTicket_years] [varchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Email] [nvarchar] (256) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[new_companyname] [nvarchar] (300) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
